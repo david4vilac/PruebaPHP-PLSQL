@@ -12,7 +12,6 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('seguimientos', function (Blueprint $table) {
-
             $table->bigIncrements('id');
             $table->string('nombres');
             $table->string('apellidos');
@@ -22,7 +21,6 @@ return new class extends Migration
             $table->date('fecha');
             $table->integer('dias');
             $table->date('fecha_proximo_seguimiento');
-            
             $table->timestamps();
         });
     }

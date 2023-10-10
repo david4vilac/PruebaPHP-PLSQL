@@ -1,6 +1,6 @@
 @extends('layout/plantilla')
 
-@section('tituloPagina', 'Agregar con Laravel')
+@section('tituloPagina', 'POST - CRUD')
 
 @section('contenido')
 <br>
@@ -22,12 +22,10 @@
         <input type="text" name="correo" class="form-control" required>
         <label for="">Telefono</label>
         <input type="text" name="telefono" class="form-control" required >
-        <label for="">Dias</label>
-        <input type="text" name="dias" class="form-control" required>
         <label for="">Fecha</label>
         <input type="date" name="fecha" class="form-control" required>
-        <label for="">Fecha Proximo Seguimiento</label>
-        <input type="date" name="fecha_proximo_seguimiento" class="form-control" required>
+        <label for="">Dias</label>
+        <input type="text" name="dias" class="form-control" required>
         <br>
         <a href="{{ route('seguimientos.index')}}" class="btn btn-secondary">
         <span class="fas fa-undo-alt"></span> Regresar</a>
@@ -35,8 +33,5 @@
     </form>
   </div>
 </div>
-
-
-
 
 @endsection

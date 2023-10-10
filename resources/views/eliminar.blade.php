@@ -1,6 +1,6 @@
 @extends('layout/plantilla')
 
-@section('tituloPagina', 'Crud con Laravel')
+@section('tituloPagina', 'DETELE - CRUD')
 
 @section('contenido')
 <br>

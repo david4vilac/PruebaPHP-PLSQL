@@ -1,6 +1,6 @@
 @extends('layout/plantilla')
 
-@section('tituloPagina', 'Actualizar con Laravel')
+@section('tituloPagina', 'PUT - CRUD')
 
 @section('contenido')
 <br>
@@ -28,7 +28,7 @@
         <label for="">Fecha</label>
         <input type="date" name="fecha" class="form-control" required value="{{ $seguimiento->fecha }}">
         <label for="">Fecha Proximo Seguimiento</label>
-        <input type="date" name="fecha_proximo_seguimiento" class="form-control" required value="{{ $seguimiento->fecha_proximo_seguimiento }}">
+        <input type="date" name="fecha_proximo_seguimiento" class="form-control" value="{{ $seguimiento->fecha_proximo_seguimiento }}" readonly>
         <br>
         <a href="{{ route('seguimientos.index')}}" class="btn btn-secondary">
         <span class="fas fa-undo-alt"></span> Regresar</a>
